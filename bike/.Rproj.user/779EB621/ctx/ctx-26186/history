@@ -1,0 +1,25 @@
+data = table.read("./day.csv")
+data = read.table("./day.csv")
+View(data)
+data = read.table("./day.csv", sep=",")
+plot(temp, cnt)
+temp = data$V10
+cnt = data$V16
+plot(temp, cnt)
+plot(temp, cnt, col="blue", type="p", pch=16)
+temp = data[,10]
+temp = data[,10]
+cnt = data[,16]
+plot(temp, cnt, col="blue", type="p", pch=16)
+plot(temp, cnt, col="blue", pch=16)
+plot(temp, cnt, col="blue", pch=16)
+plot(temp, cnt, col="blue", pch=16б cex=1)
+plot(temp, cnt, col="blue", pch=16, cex=1)
+plot(temp, cnt, col="blue", pch=16, type="p")
+plot(temp, cnt, col="blue", pch=16, type="p")
+detach("package:treemap", unload=TRUE)
+detach("package:treemap", unload=TRUE)
+graphics::plot(temp, cnt, col="blue", pch=16, type="p")
+install.packages("graphics")
+install.packages("graphics")
+install.packages("graphics")

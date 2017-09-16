@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "dayData = read.csv(\"./day.csv\", header=TRUE)\nhourData = read.csv(\"./hour.csv\", header=TRUE)\n\nfilteringDayData = subset(dayData, season == 2)\nfilteringHourData = subset(hourData, season == 2 & instant %% 24 > 12 & instant %% 24 < 20 & workingday == 0)\n\ntemp = filteringData[,10]\natemp = filteringData[,11]\nhum = filteringData[,12]\nwindspeed = filteringData[,13]\ncnt = filteringData[,16]\nplot(atemp, cnt, col=\"blue\", pch=16, type=\"p\")\n\ntemp = filteringHourData$temp\natemp = filteringHourData$atemp\nhum = filteringHourData$hum\nwindspeed = filteringHourData$windspeed\ncnt = filteringHourData$cnt\nplot(atemp, cnt, col=\"blue\", pch=16, type=\"p\")",
+    "created" : 1505570535325.000,
+    "dirty" : true,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "2593183392",
+    "id" : "67678156",
+    "lastKnownWriteTime" : 13229676095799345,
+    "last_content_update" : 1505575471823,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
