@@ -1,0 +1,21 @@
+{
+    "collab_server" : "",
+    "contents" : "library('googleVis')\n\ncoords = strsplit(data$coords, split=\"; \")\nlat = sapply(coords, function(x) x[1])\nlong = sapply(coords, function(x) x[2])\n\ndata$lat = lat\ndata$long = long\n\ndata$gcoords = gsub(\"; \", \":\", data$coords)\ndata$gcoords = sapply(coords, function(x) paste(x[2], x[1], sep=\":\"))\n\ngeoMap = gvisMap(data, locationvar=\"gcoords\", tipvar=\"url\", options=list(showTip=FALSE, \n                                               mapType='normal',\n                                               enableScrollWheel=TRUE\n                                               ,useMapTypeControl=TRUE))\n\nplot(geoMap)\n\nprint(geoMap, tag = \"chart\")",
+    "created" : 1512320742326.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3281138484",
+    "id" : "3932DA06",
+    "lastKnownWriteTime" : 1512323786,
+    "last_content_update" : 1512323786738,
+    "path" : "K:/R/zadania_2/main.r",
+    "project_path" : "main.r",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
